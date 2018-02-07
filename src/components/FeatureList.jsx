@@ -25,9 +25,19 @@ const featureList = [
 ]
 
 function FeatureList() {
+  const feature = {
+    backgroundColor: '#052D49',
+    color: 'white',
+    fontFamily: 'sans-serif',
+    display: 'flex',
+    // justifyContent: 'space-around',
+    // alignItems: 'center',
+    margin: '0%, 15%',
+    padding: '2% 25%'
+  }
 
   return(
-    <div>
+    <div style={feature}>
       {featureList.map((features, i) =>
         <div>
           <Feature

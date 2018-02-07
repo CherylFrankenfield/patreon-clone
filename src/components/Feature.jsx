@@ -2,8 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 function Feature(props) {
+  const featureCard = {
+    width: '80%',
+
+  }
   return(
-    <div>
+    <div style={featureCard}>
       <p>{props.image}</p>
       <h3>{props.header}</h3>
       <p>{props.text}</p>
