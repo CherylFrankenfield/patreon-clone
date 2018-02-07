@@ -7,9 +7,14 @@ function Button(props) {
       <style jsx>
         {`
         .hero-button {
-          borderRadius: 15;
+          border-radius: 2px;
           width: 'auto';
-          height: 15;
+          height: 50px;
+          margin: 10px;
+          }
+          .hero-button:hover {
+            opacity: .8
+            box-shadow: .5px .5px 2px white;
           }
           `}
       </style>
