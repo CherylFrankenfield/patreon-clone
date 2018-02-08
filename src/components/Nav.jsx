@@ -19,16 +19,24 @@ const navRight = {
 function Nav() {
   return(
     <div style={nav}>
-      <h1><Link to="/">Matreon</Link></h1>
+      <style jsx global>{`
+          .brand {
+            border-right: 1px solid black;
+            text-decoration: none;
+            padding-right: 5%;
+          }
+          .searchbar {
+            height:80%;
+          }
+          a {
+            text-decoration: none;
+          }
+        }`}</style>
+      <h1 className="brand"><Link to="/">Matreon</Link></h1>
       <div style={navRight}>
         <input className="searchbar" defaultValue="Search" />
-          <style jsx>{`
-            .searchbar {
-              height:80%;
-            }
-          `}</style>
         <a>Start My Page </a>
-        <a>Explore Creators </a>
+        <Link to="/creators">Explore Creators</Link>
         <Link to="/signin">Sign In</Link>
         <Link to="/login">Log In</Link>
       </div>

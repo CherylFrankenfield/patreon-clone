@@ -17,7 +17,7 @@ const innerDiv = {
 
 const center = {
   textAlign: 'center',
-}
+};
 
 function UserForm() {
   if (window.location.href.indexOf('signin') > -1){

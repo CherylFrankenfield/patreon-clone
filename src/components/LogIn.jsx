@@ -5,8 +5,8 @@ import FaEnvelope from 'react-icons/lib/fa/envelope';
 function LogIn() {
   return(
     <div>
-    <style jsx>
-      {`
+      <style jsx>
+        {`
       .signUpForm {
         margin: 10px;
         padding: 10px;
@@ -43,14 +43,14 @@ function LogIn() {
       }
         `}
       </style>
-    <button className="facebookButton">Continue With Facebook</button>
-    <p>or log in with e-mail</p>
+      <button className="facebookButton">Continue With Facebook</button>
+      <p>or log in with e-mail</p>
 
-    <label><FaEnvelope/></label><input placeholder="Email"/><br></br>
-    <label><FaCheck/></label><input placeholder="Password"/><br></br>
-    <a href="#">Forgot Password</a>
-    <button className="signUpButton">Log In</button>
-    <p>New to Matreon? <a href="#">Sign Up</a></p>
+      <label><FaEnvelope/></label><input placeholder="Email"/><br></br>
+      <label><FaCheck/></label><input placeholder="Password"/><br></br>
+      <a href="#">Forgot Password</a>
+      <button className="signUpButton">Log In</button>
+      <p>New to Matreon? <a href="#">Sign Up</a></p>
 
     </div>
   );
