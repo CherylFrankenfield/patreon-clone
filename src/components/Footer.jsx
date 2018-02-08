@@ -11,7 +11,7 @@ const footer = {
   padding: '5vw 1vw',
   justifyContent: 'space-around',
   marginRight: 25
-}
+};
 
 function Footer() {
   return(
@@ -32,7 +32,7 @@ function Footer() {
             font-size: 35px;
           }
           `}</style>
-        <div><Link to="/">Matreon</Link></div>
+      <div><Link to="/">Matreon</Link></div>
 
 
       <div>
@@ -72,4 +72,4 @@ function Footer() {
 }
 
 
-export default Footer
+export default Footer;

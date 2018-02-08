@@ -8,7 +8,8 @@ function Button(props) {
         {`
         .hero-button {
           border-radius: 2px;
-          width: 'auto';
+          width: 160px;
+          font-size: 13px;
           height: 50px;
           margin: 10px;
           }
