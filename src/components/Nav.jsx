@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import UserForm from './UserForm';
 
 const nav = {
   display: 'flex',
@@ -14,13 +16,13 @@ const navRight = {
 function Nav() {
   return(
     <div style={nav}>
-      <h1>Matreon </h1>
+      <h1><Link to="/">Matreon</Link></h1>
       <div style={navRight}>
         <input defaultValue="Search"></input>
         <a>Start My Page </a>
         <a>Explore Creators </a>
-        <a>Sign Up </a>
-        <a>Log In</a>
+        <Link to="/signin">Sign In</Link>
+        <Link to="/login">Log In</Link>
       </div>
     </div>
   );

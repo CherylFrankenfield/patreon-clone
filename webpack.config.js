@@ -40,7 +40,7 @@ module.exports = {
           name: 'images/[hash]-[name].[ext]'
         }
       }
-    },  
+    },
     {
       test: /\.jsx?$/,
       enforce: "pre",
@@ -49,6 +49,17 @@ module.exports = {
       options: {
         emitWarning: true,
         configFile: "./.eslintrc.json"
+        }
+      },
+      {
+        test: /\.css$/,
+        loader: 'style-loader'
+      }, {
+        test: /\.css$/,
+        loader: 'css-loader',
+        query: {
+          modules: true,
+          localIdentName: '[name]__[local]___[hash:base64:5]'
         }
       },
       {

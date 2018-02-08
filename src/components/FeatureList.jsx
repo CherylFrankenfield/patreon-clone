@@ -22,7 +22,7 @@ const featureList = [
     header: 'OVER $150 MILLION SENT TO CREATORS',
     text: 'An average patron pays more on a monthly basis than consumers pay for Netflix, Spotify, or Amazon Prime.'
   }
-]
+];
 
 function FeatureList() {
   const feature = {
@@ -34,7 +34,7 @@ function FeatureList() {
     // alignItems: 'center',
     margin: '0%, 15%',
     padding: '2% 25%'
-  }
+  };
 
   return(
     <div style={feature}>

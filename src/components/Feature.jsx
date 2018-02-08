@@ -5,10 +5,14 @@ function Feature(props) {
   const featureCard = {
     width: '80%',
 
-  }
+  };
   return(
     <div style={featureCard}>
-      <p>{props.image}</p>
+      <p className="icon">{props.image}</p>
+      <style jsx>{`
+            .icon {
+              font-size: 50px;
+            }`}</style>
       <h3>{props.header}</h3>
       <p>{props.text}</p>
     </div>
