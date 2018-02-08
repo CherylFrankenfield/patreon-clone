@@ -32,6 +32,7 @@ function UserForm() {
   } else if (window.location.href.indexOf('login') > -1){
     return(
       <div style={outerDiv}>
+        <h1 style={center}>Log In</h1>
         <div style={innerDiv}>
           <LogIn
 
