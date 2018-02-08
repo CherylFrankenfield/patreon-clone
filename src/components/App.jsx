@@ -2,8 +2,7 @@ import React from 'react';
 import Nav from './Nav';
 import Body from './Body';
 import UserForm from './UserForm';
-import SignIn from './SignIn';
-import LogIn from './LogIn';
+import Footer from './Footer';
 import CreatorsList from './CreatorsList';
 import { Switch, Route } from 'react-router-dom';
 
@@ -17,6 +16,7 @@ function App(){
         <Route path='/login' component={UserForm}/>
         <Route path='/creators' component={CreatorsList}/>
       </Switch>
+      <Footer />
 
 
     </div>
