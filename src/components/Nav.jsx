@@ -5,8 +5,11 @@ import UserForm from './UserForm';
 const nav = {
   display: 'flex',
   justifyContent: 'space-between',
-  backgroundColor: 'lightgrey',
-  height: 70
+  alignItems: 'center',
+  backgroundColor: 'white',
+  borderBottom: '1px solid black',
+  height: 70,
+  padding: '0 5%'
 };
 const navRight = {
   display: 'flex',
@@ -18,7 +21,12 @@ function Nav() {
     <div style={nav}>
       <h1><Link to="/">Matreon</Link></h1>
       <div style={navRight}>
-        <input defaultValue="Search"></input>
+        <input className="searchbar" defaultValue="Search" />
+          <style jsx>{`
+            .searchbar {
+              height:80%;
+            }
+          `}</style>
         <a>Start My Page </a>
         <a>Explore Creators </a>
         <Link to="/signin">Sign In</Link>
