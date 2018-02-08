@@ -2,7 +2,7 @@ import React from 'react';
 import Nav from './Nav';
 import Body from './Body';
 import UserForm from './UserForm';
-import SignIn from './SignIn'
+import SignIn from './SignIn';
 import LogIn from './LogIn';
 import { Switch, Route } from 'react-router-dom';
 

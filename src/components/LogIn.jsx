@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 function LogIn(props) {
   return(
     <div>
-      <h2>{props.header}</h2>
+      <h2 style={props.header}></h2>
       <div style={props.outerDiv}>
         LogIn Works
         <div style={props.innerDiv}></div>
@@ -16,9 +16,8 @@ function LogIn(props) {
 
 LogIn.propTypes = {
   header: PropTypes.string,
-  outerDiv: PropTypes.object,
-  innerDiv: PropTypes.object,
-  icon: PropTypes.string,
+  text: PropTypes.string,
+  icon: PropTypes.string
 };
 
 export default LogIn;

@@ -15,14 +15,17 @@ const innerDiv = {
   width: '50vw'
 };
 
-
+const center = {
+  textAlign: 'center',
+}
 
 function UserForm() {
   if (window.location.href.indexOf('signin') > -1){
     return(
       <div style={outerDiv}>
+        <h1 style={center}>Sign Up</h1>
         <div style={innerDiv}>
-          <SignIn />
+          <SignIn/>
         </div>
       </div>
     );
@@ -30,7 +33,9 @@ function UserForm() {
     return(
       <div style={outerDiv}>
         <div style={innerDiv}>
-          <LogIn />
+          <LogIn
+
+          />
         </div>
       </div>
     );
